@@ -1,0 +1,16 @@
+The algorithm implemented by lin_geth_gaslimit.lin is the published
+go-ethereum CalcGasLimit / VerifyGaslimit math:
+
+  Upstream: https://github.com/ethereum/go-ethereum
+  Tag:      v1.14.12
+  Commit:   293a300d64be3d9a1c2cc92c26fcff4089deadcd
+  Files:    core/block_validator.go
+            consensus/misc/gaslimit.go
+            params/protocol_params.go
+  License:  GNU Lesser General Public License v3.0
+
+This repository contains an original LIN restatement of that scalar math
+with explicit arguments and fail-closed overflow. It is not a copy of the
+go-ethereum tree and is not a Geth node.
+
+See https://www.gnu.org/licenses/lgpl-3.0.html
